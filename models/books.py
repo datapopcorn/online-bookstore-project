@@ -8,21 +8,21 @@ class Book(SQLModel, table=True):
     __tablename__ = "books"
     __table_args__ = {"schema": "inventory"}
     asin: str = Field(primary_key=True)
-    title: Optional[str] = None
-    author: Optional[str] = None
-    sold_by: Optional[str] = None
-    img_url: Optional[str] = None
-    product_url: Optional[str] = None
-    stars: Optional[float] = None
-    reviews: Optional[int] = None
-    price: Optional[float] = None
-    is_kindle_unlimited: Optional[bool] = None
-    category_id: Optional[int] = None
-    is_best_seller: Optional[bool] = None
-    is_editors_pick: Optional[bool] = None
-    is_good_reads_choice: Optional[bool] = None
-    published_date: Optional[date] = None
-    category_name: Optional[str] = None
+    title: str = Field(index=True)
+    author: str | None = None
+    sold_by: str | None = None
+    img_url: str | None = None
+    product_url: str | None = None
+    stars: float | None = None
+    reviews: int | None = None
+    price: float | None = None
+    is_kindle_unlimited: bool | None = None
+    category_id: int | None = None
+    is_best_seller: bool | None = None
+    is_editors_pick: bool | None = None
+    is_good_reads_choice: bool | None = None
+    published_date: date | None = None
+    category_name: str | None = None
 
 if __name__ == "__main__":
     ensure_database_exists()

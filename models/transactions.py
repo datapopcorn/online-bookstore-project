@@ -6,9 +6,9 @@ from utils import ensure_schema_exists, ensure_database_exists, create_db_and_ta
 class Transaction(SQLModel, table=True):
     __tablename__ = "transactions"
     __table_args__ = {"schema": "sales"}
-    id: Optional[int] = Field(default=None, primary_key=True)
-    user_id: str 
-    book_id: str 
+    id: int | None = Field(default=None, primary_key=True)
+    user_id: str | None = Field(default=None, foreign_key="auth.users.email")
+    book_id: str | None = Field(default=None, foreign_key="inventory.books.asin")
     transaction_date: datetime = Field(default_factory=datetime.now)
     quantity: int
     total_amount: float
