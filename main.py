@@ -21,7 +21,7 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/login")
 @app.on_event("startup")
 def startup_event():
     ensure_database_exists()
-    for schema in ["auth", "inventory", "transaction"]:
+    for schema in ["auth", "inventory", "sales"]:
         ensure_schema_exists(schema)
     create_db_and_tables()
 
