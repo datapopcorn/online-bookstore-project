@@ -25,7 +25,7 @@ GCS_FILE_PATH_USERS = f"{GCS_BUCKET}/{BQ_TABLE_USERS.split('.')[-1]}_backup_{dat
 
 # 環境變數 (可在 Cloud Composer 環境變數設定)
 SLACK_WEBHOOK_CONN_ID = os.environ.get("SLACK_WEBHOOK_CONN_ID", "slack_default")
-SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
+SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL")
 
 # ========== 定義發送 Slack 訊息的函數 ==========
 def get_trigger_type(**kwargs):
