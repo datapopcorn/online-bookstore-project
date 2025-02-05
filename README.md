@@ -1,4 +1,4 @@
-# PostgreSQL + FastAPI + BigQuery Data Pipeline with Composer, dbt, and LookML
+# PostgreSQL + FastAPI + BigQuery Data Pipeline with Composer, dbt, and Looker
 
 This project demonstrates the creation of an end-to-end data engineering pipeline using local PostgreSQL, FastAPI for API development, and BigQuery as the data warehouse. It also showcases user authentication, book purchase functionality, and data synchronization to BigQuery for analytics. Additionally, it leverages dbt for transforming raw BigQuery data into analytics-ready models and LookML for defining business logic and creating interactive dashboards in Looker Core.
 
