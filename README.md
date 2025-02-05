@@ -13,7 +13,7 @@ This project demonstrates the creation of an end-to-end data engineering pipelin
    - Allows users to browse books and simulate purchases.
 
 3. Data Pipeline:
-   - Synchronizes book and transaction data from PostgreSQL to BigQuery.
+   - Load book and transaction data from PostgreSQL to BigQuery using dlt & backup data from BigQuery to GCS using Cloud Composer.
 
 4. Swagger UI:
    - Interactively test APIs with FastAPI's built-in Swagger interface.
@@ -21,16 +21,13 @@ This project demonstrates the creation of an end-to-end data engineering pipelin
 5. Dockerized PostgreSQL:
    - Local PostgreSQL instance running in a Docker container.
 
-6. Data Orchestration:
-   - Google Cloud Composer for automating data workflows.
-
-7. Data Analytics in BigQuery:
+6. Data Analytics in BigQuery:
    - Leverage synchronized data for insights.
 
-8. LookML for BI:
+7. LookML for BI:
    - Use Looker Core and LookML for custom dashboards and data modeling.
 
-9. Data Modeling with dbt:
+8. Data Modeling with dbt:
     - Transform raw BigQuery data into analytics-ready models.
 
 ### Technologies Used
