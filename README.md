@@ -3,6 +3,8 @@
 This project demonstrates the creation of an end-to-end data engineering pipeline using local PostgreSQL, FastAPI for API development, and BigQuery as the data warehouse. It also showcases user authentication, book purchase functionality, and data synchronization to BigQuery for analytics. Additionally, it leverages dbt for transforming raw BigQuery data into analytics-ready models and LookML for defining business logic and creating interactive dashboards in Looker Core.
 
 ## Project Overview
+<img width="1236" alt="image" src="https://github.com/user-attachments/assets/057d4954-49a0-41eb-89eb-0a2ba49ef7fd" />
+
 
 ### Features:
 
